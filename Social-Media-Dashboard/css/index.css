@@ -1,0 +1,234 @@
+/* General Body Styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+    color: #333;
+}
+
+/* Navbar Styling */
+nav {
+    background-color: #4CAF50;
+    padding: 10px;
+    text-align: center;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 15px 20px;
+    margin: 0 10px;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+nav a:hover {
+    background-color: #45a049;
+    border-radius: 5px;
+}
+
+/* Dashboard Layout */
+.dashboard {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+/* Sidebar Styling */
+.sidebar {
+    width: 25%;
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+.user-info {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.profile-pic {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid #4CAF50;
+    margin-bottom: 10px;
+}
+
+#user-name {
+    font-size: 22px;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+#user-email {
+    font-size: 16px;
+    color: #777;
+}
+
+/* Notifications Styling */
+.notifications {
+    margin-top: 20px;
+}
+
+.notifications h3 {
+    font-size: 18px;
+    font-weight: bold;
+    color: #4CAF50;
+}
+
+#notification-list {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+#notification-list li {
+    padding: 10px;
+    background-color: #f1f1f1;
+    margin-bottom: 5px;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+/* Main Content Styling */
+.main-content {
+    width: 70%;
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+/* Create Post Form */
+.create-post {
+    margin-bottom: 30px;
+}
+
+#create-post h2 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+#post-form textarea {
+    width: 100%;
+    height: 100px;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    margin-bottom: 10px;
+}
+
+#post-form input[type="file"] {
+    margin-bottom: 10px;
+}
+
+#post-form button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#post-form button:hover {
+    background-color: #45a049;
+}
+
+/* Posts Feed */
+.feed {
+    margin-top: 20px;
+}
+
+.post {
+    background-color: #f9f9f9;
+    padding: 15px;
+    margin-bottom: 15px;
+    border-radius: 8px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+}
+
+.post h3 {
+    font-size: 20px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.post p {
+    font-size: 16px;
+    color: #555;
+}
+
+.post small {
+    display: block;
+    color: #aaa;
+    margin-top: 5px;
+}
+
+/* Post Interactions (Like, Comment) */
+.post-interactions {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15px;
+}
+
+.post-interactions button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.post-interactions button:hover {
+    background-color: #45a049;
+}
+
+/* Comments Section */
+.comments-section {
+    margin-top: 20px;
+}
+
+.comments-section .comment-input {
+    width: calc(100% - 60px);
+    padding: 8px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+.comments-section .add-comment-btn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.comments-section .add-comment-btn:hover {
+    background-color: #45a049;
+}
+
+.comment-list {
+    list-style-type: none;
+    padding-left: 0;
+    margin-top: 10px;
+}
+
+.comment-list li {
+    padding: 8px;
+    background-color: #f1f1f1;
+    margin-bottom: 5px;
+    border-radius: 5px;
+    font-size: 14px;
+}

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Social Media Dashboard</title>
+    <link rel="stylesheet" href="css/index.css" />
+  </head>
+  <body>
+    <nav>
+      <a href="index.html">Dashboard</a>
+      <a href="profile.html">Profile</a>
+      <a id="logout" href="login.html">Logout</a>
+    </nav>
+
+    <div class="dashboard">
+      <aside class="sidebar">
+        <div class="user-info">
+          <img src="images/pic1.JPG" alt="Profile" class="profile-pic" />
+          <h2 id="user-name">Waleed Khan</h2>
+          <p id="user-email">waleedKhan@example.com</p>
+        </div>
+        <!-- Notifications Section -->
+        <div class="notifications">
+          <h3>Notifications</h3>
+          <ul id="notification-list">
+            <!-- Notifications will be dynamically inserted here -->
+          </ul>
+        </div>
+      </aside>
+
+      <section class="main-content">
+        <div class="create-post">
+          <h2>Create New Post</h2>
+          <form id="post-form">
+            <textarea
+              id="post-text"
+              placeholder="What's on your mind?"
+              required
+            ></textarea>
+            <input type="file" id="post-image" />
+            <button type="submit">Post</button>
+          </form>
+        </div>
+
+        <div class="feed" id="post-feed">
+          <!-- Posts will be dynamically generated here -->
+        </div>
+      </section>
+    </div>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        if (!localStorage.getItem("isLoggedIn")) {
+          window.location.href = "login.html";
+        }
+      });
+    </script>
+
+    <script src="JS/app.js"></script>
+    <script src="JS/auth.js"></script>
+    <script src="JS/posts.js"></script>
+    <script src="JS/profile.js"></script>
+  </body>
+</html>
